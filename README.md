@@ -10,8 +10,8 @@
   <a href="https://facebook.github.io/jest/">
     <img width="150" height="150" vspace="" hspace="25" src="https://cdn.worldvectorlogo.com/logos/jest.svg">
   </a>
-  <h1>jest-runner-prettier</h1>
-  <p>Prettier runner for Jest</p>
+  <h1>jest-runner-stylelint</h1>
+  <p>Stylelint runner for Jest</p>
 </div>
 
 <div align="center">
