@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`jest-runner-stylelint failing fixture matches snapshot 1`] = `
+Object {
+  "console": null,
+  "failureMessage": "
+[4msrc/__fixtures__/bad.css[24m
+ [2m2:11[22m  [31m[31m✖[31m[39m  Unexpected unit                            [2mlength-zero-no-unit[22m             
+ [2m3:12[22m  [31m[31m✖[31m[39m  Unexpected unit                            [2mlength-zero-no-unit[22m             
+ [2m4:1[22m   [31m[31m✖[31m[39m  Unexpected missing end-of-source newline   [2mno-missing-end-of-source-newline[22m
+
+",
+  "numFailingTests": 1,
+  "numPassingTests": 0,
+  "numPendingTests": 0,
+  "skipped": undefined,
+  "snapshot": Object {
+    "added": 0,
+    "fileDeleted": false,
+    "matched": 0,
+    "unchecked": 0,
+    "unmatched": 0,
+    "updated": 0,
+  },
+  "sourceMaps": Object {},
+  "testExecError": null,
+  "testResults": Array [
+    Object {
+      "ancestorTitles": Array [],
+      "failureMessages": Array [
+        "
+[4msrc/__fixtures__/bad.css[24m
+ [2m2:11[22m  [31m[31m✖[31m[39m  Unexpected unit                            [2mlength-zero-no-unit[22m             
+ [2m3:12[22m  [31m[31m✖[31m[39m  Unexpected unit                            [2mlength-zero-no-unit[22m             
+ [2m4:1[22m   [31m[31m✖[31m[39m  Unexpected missing end-of-source newline   [2mno-missing-end-of-source-newline[22m
+
+",
+      ],
+      "fullName": undefined,
+      "numPassingAsserts": 1,
+      "status": "failed",
+      "title": "",
+    },
+  ],
+}
+`;
+
+exports[`jest-runner-stylelint passing fixture matches snapshot 1`] = `
+Object {
+  "console": null,
+  "failureMessage": undefined,
+  "numFailingTests": 0,
+  "numPassingTests": 1,
+  "numPendingTests": 0,
+  "skipped": undefined,
+  "snapshot": Object {
+    "added": 0,
+    "fileDeleted": false,
+    "matched": 0,
+    "unchecked": 0,
+    "unmatched": 0,
+    "updated": 0,
+  },
+  "sourceMaps": Object {},
+  "testExecError": null,
+  "testResults": Array [
+    Object {
+      "ancestorTitles": Array [],
+      "failureMessages": Array [
+        undefined,
+      ],
+      "fullName": undefined,
+      "numPassingAsserts": 0,
+      "status": "passed",
+      "title": "",
+    },
+  ],
+}
+`;
