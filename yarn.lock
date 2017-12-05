@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@commitlint/cli@5.2.0":
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-5.2.0.tgz#ec28f6488371ffade98f7fc9a3b3fd8ba25da7bd"
+"@commitlint/cli@5.2.3":
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-5.2.3.tgz#2d4b76f664dc811d1d77ff620e0c8301682d61cb"
   dependencies:
     "@commitlint/core" "^5.2.0"
     babel-polyfill "6.26.0"
