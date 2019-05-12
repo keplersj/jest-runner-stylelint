@@ -1104,11 +1104,11 @@ cosmiconfig@^5.0.2:
     js-yaml "^3.9.0"
     parse-json "^4.0.0"
 
-create-jest-runner@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/create-jest-runner/-/create-jest-runner-0.4.0.tgz#7a9419e9410484aec5048691c19745a4285baf45"
+create-jest-runner@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/create-jest-runner/-/create-jest-runner-0.5.0.tgz#dee44a6172ad96126164c4882eec98e83ad6928a"
   dependencies:
-    jest-worker "^22.0.0"
+    jest-worker "^24.0.0"
     throat "^4.1.0"
 
 cross-spawn@^5.0.1:
@@ -2843,11 +2843,18 @@ jest-validate@^23.5.0:
     leven "^2.1.0"
     pretty-format "^23.5.0"
 
-jest-worker@^22.0.0, jest-worker@^22.2.2, jest-worker@^22.4.3:
+jest-worker@^22.2.2, jest-worker@^22.4.3:
   version "22.4.3"
   resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-22.4.3.tgz#5c421417cba1c0abf64bf56bd5fb7968d79dd40b"
   dependencies:
     merge-stream "^1.0.1"
+
+jest-worker@^24.0.0:
+  version "24.6.0"
+  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-24.6.0.tgz#7f81ceae34b7cde0c9827a6980c35b7cdc0161b3"
+  dependencies:
+    merge-stream "^1.0.1"
+    supports-color "^6.1.0"
 
 jest@22.4.4:
   version "22.4.4"
@@ -4926,6 +4933,12 @@ supports-color@^4.0.0, supports-color@^4.4.0:
 supports-color@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.2.0.tgz#b0d5333b1184dd3666cbe5aa0b45c5ac7ac17a4a"
+  dependencies:
+    has-flag "^3.0.0"
+
+supports-color@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-6.1.0.tgz#0764abc69c63d5ac842dd4867e8d025e880df8f3"
   dependencies:
     has-flag "^3.0.0"
 
