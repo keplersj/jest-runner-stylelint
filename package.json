@@ -14,7 +14,9 @@
     "release": "semantic-release"
   },
   "lint-staged": {
-    "*": ["jest --bail --findRelatedTests"]
+    "*": [
+      "jest --bail --findRelatedTests"
+    ]
   },
   "release": {
     "verifyConditions": "@semantic-release/github"
@@ -23,7 +25,7 @@
     "collectCoverage": true
   },
   "dependencies": {
-    "create-jest-runner": "^0.4.0",
+    "create-jest-runner": "^0.5.0",
     "stylelint": "^8.3.1"
   },
   "devDependencies": {
