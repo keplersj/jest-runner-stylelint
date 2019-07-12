@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "create-jest-runner": "^0.5.3",
-    "stylelint": "^10.1.0"
+    "stylelint": "10.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "6.2.0",
