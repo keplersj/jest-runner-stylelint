@@ -13,6 +13,7 @@ Object {
   "numFailingTests": 1,
   "numPassingTests": 0,
   "numPendingTests": 0,
+  "numTodoTests": 0,
   "skipped": undefined,
   "snapshot": Object {
     "added": 0,
@@ -52,6 +53,7 @@ Object {
   "numFailingTests": 0,
   "numPassingTests": 1,
   "numPendingTests": 0,
+  "numTodoTests": 0,
   "skipped": undefined,
   "snapshot": Object {
     "added": 0,
