@@ -23,14 +23,14 @@
 
 ### Install
 
-Install `jest`_(it needs Jest 21+)_ and `jest-runner-stylelint`
+Install `jest`_(it needs Jest 21+)_, `jest-runner-stylelint`, and `stylelint`
 
 ```bash
-yarn add --dev jest jest-runner-stylelint
+npm install --save-dev jest jest-runner-stylelint stylelint
 
-# or with NPM
+# or with yarn
 
-npm install --save-dev jest jest-runner-stylelint
+yarn add --dev jest jest-runner-stylelint stylelint
 ```
 
 ### Add it to your Jest config
@@ -41,12 +41,8 @@ In your `package.json`
 {
   "jest": {
     "runner": "jest-runner-stylelint",
-    "moduleFileExtensions": [
-      "css"
-    ],
-    "testMatch": [
-      "**/*.css"
-    ]
+    "moduleFileExtensions": ["css"],
+    "testMatch": ["**/*.css"]
   }
 }
 ```
@@ -56,17 +52,13 @@ Or in `jest.config.js`
 ```js
 module.exports = {
   runner: "jest-runner-stylelint",
-  moduleFileExtensions: [
-    "css"
-  ],
-  testMatch: [
-    "**/*.css"
-  ]
+  moduleFileExtensions: ["css"],
+  testMatch: ["**/*.css"]
 };
 ```
 
 ### Run Jest
 
 ```bash
-yarn jest
+npx jest
 ```
