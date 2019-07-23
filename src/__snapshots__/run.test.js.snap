@@ -5,14 +5,14 @@ Object {
   "console": null,
   "failureMessage": "
 [4msrc/__fixtures__/bad.css[24m
- [2m2:11[22m  [31m[31m✖[31m[39m  Unexpected unit                            [2mlength-zero-no-unit[22m             
- [2m3:12[22m  [31m[31m✖[31m[39m  Unexpected unit                            [2mlength-zero-no-unit[22m             
- [2m4:1[22m   [31m[31m✖[31m[39m  Unexpected missing end-of-source newline   [2mno-missing-end-of-source-newline[22m
+ [2m2:11[22m  [31m[31m✖[31m[39m  Unexpected unit   [2mlength-zero-no-unit[22m
+ [2m3:12[22m  [31m[31m✖[31m[39m  Unexpected unit   [2mlength-zero-no-unit[22m
 
 ",
   "numFailingTests": 1,
   "numPassingTests": 0,
   "numPendingTests": 0,
+  "numTodoTests": 0,
   "skipped": undefined,
   "snapshot": Object {
     "added": 0,
@@ -30,9 +30,8 @@ Object {
       "failureMessages": Array [
         "
 [4msrc/__fixtures__/bad.css[24m
- [2m2:11[22m  [31m[31m✖[31m[39m  Unexpected unit                            [2mlength-zero-no-unit[22m             
- [2m3:12[22m  [31m[31m✖[31m[39m  Unexpected unit                            [2mlength-zero-no-unit[22m             
- [2m4:1[22m   [31m[31m✖[31m[39m  Unexpected missing end-of-source newline   [2mno-missing-end-of-source-newline[22m
+ [2m2:11[22m  [31m[31m✖[31m[39m  Unexpected unit   [2mlength-zero-no-unit[22m
+ [2m3:12[22m  [31m[31m✖[31m[39m  Unexpected unit   [2mlength-zero-no-unit[22m
 
 ",
       ],
@@ -52,6 +51,7 @@ Object {
   "numFailingTests": 0,
   "numPassingTests": 1,
   "numPendingTests": 0,
+  "numTodoTests": 0,
   "skipped": undefined,
   "snapshot": Object {
     "added": 0,
