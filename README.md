@@ -24,7 +24,7 @@
 
 ### Install
 
-Install `jest`_(it needs Jest 21+)_, `jest-runner-stylelint`, and `stylelint`
+Install `jest`, `jest-runner-stylelint`, and `stylelint`
 
 ```bash
 npm install --save-dev jest jest-runner-stylelint stylelint
@@ -36,14 +36,68 @@ yarn add --dev jest jest-runner-stylelint stylelint
 
 ### Add it to your Jest config
 
+#### Using Built-in Preset
+
+This package includes a [Jest preset](https://jestjs.io/docs/en/configuration#preset-string) which configures Jest to run stylelint on all files supported by styleint. To use it set the following in your package.json:
+
+```json
+{
+  "jest": {
+    "preset": "jest-runner-stylelint"
+  }
+}
+```
+
+or jest.config.js:
+
+```js
+module.exports = {
+  preset: "jest-runner-stylelint"
+};
+```
+
+#### Manually
+
 In your `package.json`
 
 ```json
 {
   "jest": {
-    "runner": "jest-runner-stylelint",
-    "moduleFileExtensions": ["css"],
-    "testMatch": ["**/*.css"]
+    "runner": "stylelint",
+    "moduleFileExtensions": [
+      "css",
+      "sass",
+      "scss",
+      "less",
+      "sss",
+      "htm",
+      "html",
+      "md",
+      "markdown",
+      "mdx",
+      "js",
+      "jsx",
+      "ts",
+      "tsx",
+      "vue"
+    ],
+    "testMatch": [
+      "**/*.css",
+      "**/*.sass",
+      "**/*.scss",
+      "**/*.less",
+      "**/*.sss",
+      "**/*.htm",
+      "**/*.html",
+      "**/*.md",
+      "**/*.markdown",
+      "**/*.mdx",
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.vue"
+    ]
   }
 }
 ```
@@ -52,9 +106,41 @@ Or in `jest.config.js`
 
 ```js
 module.exports = {
-  runner: "jest-runner-stylelint",
-  moduleFileExtensions: ["css"],
-  testMatch: ["**/*.css"]
+  runner: "stylelint",
+  moduleFileExtensions: [
+    "css",
+    "sass",
+    "scss",
+    "less",
+    "sss",
+    "htm",
+    "html",
+    "md",
+    "markdown",
+    "mdx",
+    "js",
+    "jsx",
+    "ts",
+    "tsx",
+    "vue"
+  ],
+  testMatch: [
+    "**/*.css",
+    "**/*.sass",
+    "**/*.scss",
+    "**/*.less",
+    "**/*.sss",
+    "**/*.htm",
+    "**/*.html",
+    "**/*.md",
+    "**/*.markdown",
+    "**/*.mdx",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.vue"
+  ]
 };
 ```
 
@@ -62,4 +148,8 @@ module.exports = {
 
 ```bash
 npx jest
+
+# or with yarn
+
+yarn jest
 ```
