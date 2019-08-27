@@ -34,6 +34,10 @@ npm install --save-dev jest jest-runner-stylelint stylelint
 yarn add --dev jest jest-runner-stylelint stylelint
 ```
 
+### Configure stylelint
+
+You must have stylelint configured before it'll lint any of your files. Please follow the [stylelint documentation on configuration](https://stylelint.io/user-guide/configuration) to create your config.
+
 ### Add it to your Jest config
 
 #### Using Built-in Preset
