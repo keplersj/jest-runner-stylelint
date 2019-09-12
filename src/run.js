@@ -1,5 +1,6 @@
 const { pass, fail } = require("create-jest-runner");
 const stylelint = require("stylelint");
+const configOverrides = require("./configOverrides");
 
 module.exports = ({ testPath, config, globalConfig }) => {
   const start = new Date();
@@ -7,7 +8,8 @@ module.exports = ({ testPath, config, globalConfig }) => {
   return stylelint
     .lint({
       files: testPath,
-      formatter: "string"
+      formatter: "string",
+      fix: configOverrides.getFix()
     })
     .then(data => {
       if (data.errored) {
