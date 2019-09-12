@@ -157,3 +157,22 @@ npx jest
 
 yarn jest
 ```
+
+## Toggle `--fix` in watch mode
+
+`jest-stylelint-runner` comes with a watch plugin that allows you to toggle the `--fix` value while in watch mode without having to update your configuration.
+
+To use this watch plugin simply add this to your Jest configuration.
+
+```js
+{
+  watchPlugins: ['jest-runner-stylelint/watch-fix'],
+}
+```
+
+After this run Jest in watch mode and you will see the following line in your watch usage menu.
+
+```
+ › Press F to override Stylelint --fix.
+```
+]
