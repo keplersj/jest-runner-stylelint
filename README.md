@@ -175,4 +175,3 @@ After this run Jest in watch mode and you will see the following line in your wa
 ```
  › Press F to override Stylelint --fix.
 ```
-]
