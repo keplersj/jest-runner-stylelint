@@ -36,7 +36,7 @@
     "husky": "^4.0.0",
     "jest": "^24.8.0",
     "lint-staged": "^9.2.0",
-    "semantic-release": "^15.13.18",
+    "semantic-release": "^16.0.0",
     "stylelint": "^11.0.0",
     "stylelint-config-standard": "^19.0.0"
   },
