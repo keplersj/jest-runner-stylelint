@@ -5,8 +5,8 @@ Object {
   "console": null,
   "failureMessage": "
 [4msrc/__fixtures__/bad.css[24m
- [2m2:11[22m  [31m[31m✖[31m[39m  Unexpected unit   [2mlength-zero-no-unit[22m
- [2m3:12[22m  [31m[31m✖[31m[39m  Unexpected unit   [2mlength-zero-no-unit[22m
+ [2m2:11[22m  [31m[31m✖[39m[31m[39m  Unexpected unit   [2mlength-zero-no-unit[22m
+ [2m3:12[22m  [31m[31m✖[39m[31m[39m  Unexpected unit   [2mlength-zero-no-unit[22m
 
 ",
   "numFailingTests": 1,
@@ -30,8 +30,8 @@ Object {
       "failureMessages": Array [
         "
 [4msrc/__fixtures__/bad.css[24m
- [2m2:11[22m  [31m[31m✖[31m[39m  Unexpected unit   [2mlength-zero-no-unit[22m
- [2m3:12[22m  [31m[31m✖[31m[39m  Unexpected unit   [2mlength-zero-no-unit[22m
+ [2m2:11[22m  [31m[31m✖[39m[31m[39m  Unexpected unit   [2mlength-zero-no-unit[22m
+ [2m3:12[22m  [31m[31m✖[39m[31m[39m  Unexpected unit   [2mlength-zero-no-unit[22m
 
 ",
       ],
