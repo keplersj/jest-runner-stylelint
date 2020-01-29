@@ -2,7 +2,7 @@ const { pass, fail } = require("create-jest-runner");
 const stylelint = require("stylelint");
 const configOverrides = require("./configOverrides");
 
-module.exports = ({ testPath, config, globalConfig }) => {
+module.exports = ({ testPath }) => {
   const start = new Date();
 
   return stylelint
@@ -29,7 +29,7 @@ module.exports = ({ testPath, config, globalConfig }) => {
         test: { path: testPath }
       });
     })
-    .catch(err => {
-      throw err;
+    .catch(error => {
+      throw error;
     });
 };

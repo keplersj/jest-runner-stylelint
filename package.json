@@ -25,7 +25,32 @@
     "verifyConditions": "@semantic-release/github"
   },
   "jest": {
-    "collectCoverage": true
+    "collectCoverage": true,
+    "projects": [
+      {
+        "displayName": "test",
+        "collectCoverage": true
+      },
+      {
+        "displayName": "lint:prettier",
+        "preset": "jest-runner-prettier",
+        "testPathIgnorePatterns": [
+          "/node_modules/",
+          "/coverage/"
+        ]
+      },
+      {
+        "runner": "eslint",
+        "displayName": "lint:eslint",
+        "testMatch": [
+          "<rootDir>/**/*.js"
+        ],
+        "testPathIgnorePatterns": [
+          "/node_modules/",
+          "/coverage/"
+        ]
+      }
+    ]
   },
   "dependencies": {
     "create-jest-runner": "^0.5.3"
@@ -33,14 +58,25 @@
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-starstuff": "^1.4.5",
     "husky": "^4.0.0",
     "jest": "^25.1.0",
+    "jest-runner-eslint": "^0.7.6",
+    "jest-runner-prettier": "^0.3.6",
     "lint-staged": "^10.0.0",
+    "prettier": "^1.19.1",
     "semantic-release": "^17.0.1",
     "stylelint": "^13.0.0",
     "stylelint-config-standard": "^19.0.0"
   },
   "peerDependencies": {
     "stylelint": "*"
+  },
+  "eslintConfig": {
+    "extends": "starstuff/auto",
+    "env": {
+      "node": true
+    }
   }
 }

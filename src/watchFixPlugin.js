@@ -1,3 +1,4 @@
+// eslint-disable-next-line jest/no-jest-import
 const { getVersion: getJestVersion } = require("jest");
 const configOverrides = require("./configOverrides");
 
@@ -10,6 +11,17 @@ if (majorJestVersion < 23) {
   Watch plugins are only available in Jest 23.0.0 and above.
   Upgrade your version of Jest in order to use it.
 `);
+}
+
+function getPrompt() {
+  const fix = configOverrides.getFix();
+  if (fix === undefined) {
+    return "override Stylelint --fix";
+  }
+  if (!fix) {
+    return "toggle Stylelint --fix (disabled)";
+  }
+  return "toggle Stylelint --fix (enabled)";
 }
 
 class StylelintWatchFixPlugin {
@@ -25,17 +37,6 @@ class StylelintWatchFixPlugin {
   }
 
   getUsageInfo() {
-    const getPrompt = () => {
-      const fix = configOverrides.getFix();
-      if (fix === undefined) {
-        return "override Stylelint --fix";
-      }
-      if (!fix) {
-        return "toggle Stylelint --fix (disabled)";
-      }
-      return "toggle Stylelint --fix (enabled)";
-    };
-
     return {
       key: this._key,
       prompt: getPrompt()

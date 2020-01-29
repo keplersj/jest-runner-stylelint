@@ -3,15 +3,16 @@ const run = require("./run");
 
 // Remove undeterministic data from test reports
 expect.addSnapshotSerializer({
-  print: (val, serialize) => {
-    delete val.perfStats;
-    delete val.testFilePath;
-    val.testResults.forEach(result => {
+  print: (value, serialize) => {
+    delete value.perfStats;
+    delete value.testFilePath;
+    value.testResults.forEach(result => {
       delete result.duration;
     });
-    return serialize(val);
+    return serialize(value);
   },
-  test: val => val && val.perfStats && val.testFilePath && val.testResults
+  test: value =>
+    value && value.perfStats && value.testFilePath && value.testResults
 });
 
 describe("jest-runner-stylelint", () => {
@@ -21,19 +22,15 @@ describe("jest-runner-stylelint", () => {
         testPath: path.join(__dirname, "__fixtures__", "bad.css"),
         config: {},
         globalConfig: {}
-      }).then(result => {
-        expect(result).toMatchSnapshot();
-      }));
+      }).then(result => expect(result).toMatchSnapshot()));
   });
-  
+
   describe("passing fixture", () => {
     it("matches snapshot", () =>
       run({
         testPath: path.join(__dirname, "__fixtures__", "good.css"),
         config: {},
         globalConfig: {}
-      }).then(result => {
-        expect(result).toMatchSnapshot();
-      }));
+      }).then(result => expect(result).toMatchSnapshot()));
   });
 });
