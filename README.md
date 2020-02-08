@@ -175,3 +175,37 @@ After this run Jest in watch mode and you will see the following line in your wa
 ```
  › Press F to override Stylelint --fix.
 ```
+
+## Options
+
+This project uses [cosmiconfig](https://github.com/davidtheclark/cosmiconfig), so you can provide config via:
+
+- a `jest-runner-stylelint` property in your `package.json`
+- a `jest-runner-stylelint.config.js` JS file
+- a `.jest-runner-stylelintrc` JSON file
+
+In `package.json`
+
+```json
+{
+  "jest-runner-stylelint": {
+    "cliOptions": {
+      // Options here
+    }
+  }
+}
+```
+
+or in `jest-runner-stylelint.config.js`
+
+```js
+module.exports = {
+  cliOptions: {
+    // Options here
+  }
+};
+```
+
+### cliOptions
+
+Follow the [stylelint documentation on configuration](https://stylelint.io/user-guide/cli#options) to create your cli options.
