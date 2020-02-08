@@ -3,14 +3,11 @@ const normalizeConfig = require("./normalizeConfig");
 
 const explorerSync = cosmiconfigSync("jest-runner-stylelint");
 
-const getCliOptions = config => {
-  const result = explorerSync.search(config.rootDir);
+const getCliOptions = ({ rootDir }) => {
+  const result = explorerSync.search(rootDir);
+  const config = result === null ? {} : result.config;
 
-  if (result) {
-    return normalizeConfig(result.config);
-  }
-
-  return normalizeConfig({});
+  return normalizeConfig(config);
 };
 
 module.exports = getCliOptions;

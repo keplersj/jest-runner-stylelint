@@ -1,7 +1,7 @@
 const { pass, fail } = require("create-jest-runner");
 const stylelint = require("stylelint");
 const configOverrides = require("./configOverrides");
-const getCliOptions = require("./getCliOptions");
+const getCliOptions = require("./utils/getCliOptions");
 
 module.exports = ({ testPath, config }) => {
   const start = new Date();
