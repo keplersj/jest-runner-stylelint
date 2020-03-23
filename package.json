@@ -66,7 +66,7 @@
     "jest-runner-eslint": "^0.7.6",
     "jest-runner-prettier": "^0.3.6",
     "lint-staged": "^10.0.0",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.2",
     "semantic-release": "^17.0.1",
     "stylelint": "^13.0.0",
     "stylelint-config-standard": "^20.0.0"
