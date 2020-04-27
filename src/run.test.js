@@ -6,13 +6,13 @@ expect.addSnapshotSerializer({
   print: (value, serialize) => {
     delete value.perfStats;
     delete value.testFilePath;
-    value.testResults.forEach(result => {
+    value.testResults.forEach((result) => {
       delete result.duration;
     });
     return serialize(value);
   },
-  test: value =>
-    value && value.perfStats && value.testFilePath && value.testResults
+  test: (value) =>
+    value && value.perfStats && value.testFilePath && value.testResults,
 });
 
 describe("jest-runner-stylelint", () => {
@@ -21,8 +21,8 @@ describe("jest-runner-stylelint", () => {
       run({
         testPath: path.join(__dirname, "__fixtures__", "bad.css"),
         config: {},
-        globalConfig: {}
-      }).then(result => expect(result).toMatchSnapshot()));
+        globalConfig: {},
+      }).then((result) => expect(result).toMatchSnapshot()));
   });
 
   describe("passing fixture", () => {
@@ -30,7 +30,7 @@ describe("jest-runner-stylelint", () => {
       run({
         testPath: path.join(__dirname, "__fixtures__", "good.css"),
         config: {},
-        globalConfig: {}
-      }).then(result => expect(result).toMatchSnapshot()));
+        globalConfig: {},
+      }).then((result) => expect(result).toMatchSnapshot()));
   });
 });

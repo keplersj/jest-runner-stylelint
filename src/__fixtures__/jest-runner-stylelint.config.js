@@ -1,5 +1,5 @@
 module.exports = {
   cliOptions: {
-    allowEmptyInput: true
-  }
+    allowEmptyInput: true,
+  },
 };

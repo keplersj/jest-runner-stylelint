@@ -56,7 +56,7 @@ or jest.config.js:
 
 ```js
 module.exports = {
-  preset: "jest-runner-stylelint"
+  preset: "jest-runner-stylelint",
 };
 ```
 
@@ -126,7 +126,7 @@ module.exports = {
     "jsx",
     "ts",
     "tsx",
-    "vue"
+    "vue",
   ],
   testMatch: [
     "**/*.css",
@@ -143,8 +143,8 @@ module.exports = {
     "**/*.jsx",
     "**/*.ts",
     "**/*.tsx",
-    "**/*.vue"
-  ]
+    "**/*.vue",
+  ],
 };
 ```
 
@@ -202,7 +202,7 @@ or in `jest-runner-stylelint.config.js`
 module.exports = {
   cliOptions: {
     // Options here
-  }
+  },
 };
 ```
 

@@ -9,31 +9,31 @@ module.exports = ({ testPath, config }) => {
   const defaultConfig = {
     files: testPath,
     formatter: "string",
-    fix: configOverrides.getFix()
+    fix: configOverrides.getFix(),
   };
   const { cliOptions = {} } = getCliOptions(config);
 
   return stylelint
     .lint(Object.assign({}, cliOptions, defaultConfig))
-    .then(data => {
+    .then((data) => {
       if (data.errored) {
         return fail({
           start,
           end: new Date(),
           test: {
             path: testPath,
-            errorMessage: data.output
-          }
+            errorMessage: data.output,
+          },
         });
       }
 
       return pass({
         start,
         end: new Date(),
-        test: { path: testPath }
+        test: { path: testPath },
       });
     })
-    .catch(error => {
+    .catch((error) => {
       throw error;
     });
 };

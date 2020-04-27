@@ -16,21 +16,21 @@ describe("watchFixPlugin", () => {
     const plugin = new WatchFixPlugin({ stdout, config });
     expect(plugin.getUsageInfo()).toEqual({
       key: "F",
-      prompt: "override Stylelint --fix"
+      prompt: "override Stylelint --fix",
     });
 
     await plugin.run(plugin);
 
     expect(plugin.getUsageInfo()).toEqual({
       key: "F",
-      prompt: "toggle Stylelint --fix (enabled)"
+      prompt: "toggle Stylelint --fix (enabled)",
     });
 
     await plugin.run(plugin);
 
     expect(plugin.getUsageInfo()).toEqual({
       key: "F",
-      prompt: "toggle Stylelint --fix (disabled)"
+      prompt: "toggle Stylelint --fix (disabled)",
     });
   });
 
@@ -55,7 +55,7 @@ describe("watchFixPlugin", () => {
     const plugin = new WatchFixPlugin({ stdout, config });
     expect(plugin.getUsageInfo()).toEqual({
       key: "z",
-      prompt: "override Stylelint --fix"
+      prompt: "override Stylelint --fix",
     });
   });
 });

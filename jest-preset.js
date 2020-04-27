@@ -15,7 +15,7 @@ module.exports = {
     "jsx",
     "ts",
     "tsx",
-    "vue"
+    "vue",
   ],
   testMatch: [
     "**/*.css",
@@ -32,6 +32,6 @@ module.exports = {
     "**/*.jsx",
     "**/*.ts",
     "**/*.tsx",
-    "**/*.vue"
-  ]
+    "**/*.vue",
+  ],
 };

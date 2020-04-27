@@ -1,6 +1,6 @@
-const normalizeConfig = config => {
+const normalizeConfig = (config) => {
   return Object.assign({}, config, {
-    cliOptions: config.cliOptions || {}
+    cliOptions: config.cliOptions || {},
   });
 };
 

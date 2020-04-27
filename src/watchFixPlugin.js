@@ -39,7 +39,7 @@ class StylelintWatchFixPlugin {
   getUsageInfo() {
     return {
       key: this._key,
-      prompt: getPrompt()
+      prompt: getPrompt(),
     };
   }
 }
