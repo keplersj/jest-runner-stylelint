@@ -6,11 +6,15 @@ const getCliOptions = require("./utils/getCliOptions");
 module.exports = ({ testPath, config }) => {
   const start = new Date();
 
+  const fix = configOverrides.getFix();
+
   const defaultConfig = {
     files: testPath,
     formatter: "string",
-    fix: configOverrides.getFix(),
   };
+
+  if (fix !== undefined) defaultConfig.fix = fix;
+
   const { cliOptions = {} } = getCliOptions(config);
 
   return stylelint
