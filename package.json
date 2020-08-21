@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "cosmiconfig": "^7.0.0",
-    "create-jest-runner": "^0.6.0"
+    "create-jest-runner": "^0.7.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.0.1",
