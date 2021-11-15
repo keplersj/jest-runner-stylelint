@@ -22,6 +22,7 @@ describe("jest-runner-stylelint", () => {
         testPath: path.join(__dirname, "__fixtures__", "bad.css"),
         config: {},
         globalConfig: {},
+        extraOptions: {},
       }).then((result) => expect(result).toMatchSnapshot()));
   });
 
@@ -31,6 +32,7 @@ describe("jest-runner-stylelint", () => {
         testPath: path.join(__dirname, "__fixtures__", "good.css"),
         config: {},
         globalConfig: {},
+        extraOptions: {},
       }).then((result) => expect(result).toMatchSnapshot()));
   });
 });
