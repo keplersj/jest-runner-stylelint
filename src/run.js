@@ -1,15 +1,14 @@
 const { pass, fail } = require("create-jest-runner");
 const stylelint = require("stylelint");
-const configOverrides = require("./configOverrides");
 const getCliOptions = require("./utils/getCliOptions");
 
-module.exports = ({ testPath, config }) => {
+module.exports = ({ testPath, config, extraOptions }) => {
   const start = new Date();
 
   const defaultConfig = {
     files: testPath,
     formatter: "string",
-    fix: configOverrides.getFix(),
+    fix: extraOptions.fix,
   };
   const { cliOptions = {} } = getCliOptions(config);
 
